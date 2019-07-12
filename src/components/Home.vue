@@ -1,8 +1,8 @@
 <template>
     <div class="box">
         <p>自定义组件</p>
-        <jsplumb></jsplumb>
-     
+       
+        <rsa></rsa>
     </div>
 </template>
 <style scoped>
