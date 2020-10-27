@@ -4,10 +4,17 @@ import router from './router'
 import store from './store'
 import 'normalize.css/normalize.css'
 
+
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI);
+
+
+
 import 'babel-polyfill';
 
 // import ElementUI from 'element-ui';
-import element from '@/ui/element';
+// import element from '@/ui/element';
 // Vue.use(element)
 
 //import Antd from 'ant-design-vue'
@@ -16,10 +23,10 @@ Vue.use(antd);
 
 //全部引入elementui 和国际化i18n
 import i18n from './lang';
-Vue.use(element,{
-  size: 'small',
-  i18n: (key, value) => i18n.t(key, value)
-})
+// Vue.use(element,{
+//   size: 'small',
+//   i18n: (key, value) => i18n.t(key, value)
+// })
 
 //借用vue-resource 的jsonp
 import vueResource from 'vue-resource';
@@ -109,11 +116,19 @@ import Worker from '@/api/worker'
 Vue.use(Worker)
 
 
+//quill  富文本编辑
+import VueQuillEditor from 'vue-quill-editor'
+Vue.use(VueQuillEditor)
+
+
+
+
 
 // import $ from 'jquery'
 // window.$ = $
 
 import jsplumb from 'jsplumb'
+
 if(window){
   window.jsplumb = jsplumb
 }

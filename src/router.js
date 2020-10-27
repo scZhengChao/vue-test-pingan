@@ -8,6 +8,11 @@ let routes = [
     name: 'home',
     component: () => import(/* webpackChunkName: "home" */ './components/Home.vue')
   },
+  {
+      path:'/test',
+      name:'test',
+      component:()=>import(/* webpackChunkName: "test" */ './components/Test.vue')
+  }
 ]
 
 export default new Router({

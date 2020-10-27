@@ -6,8 +6,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="stylesheet" href="./static/font-awesome/css/font-awesome.min.css">
-    
+    <!-- <meta http-equiv="Access-Control-Allow-Origin" content="*"> -->
     <title>app</title>
+    <script src="./static/TcPlayer-2.3.1.js"> </script>
+    <script src='./static/xss.js'></script>
+    <script src="http://at.alicdn.com/t/font_912383_lw7j8jpask.js"></script>
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <script src="./static/vue-awesome-swiper.js"></script> -->
+
+    <!-- <script src="https://lncs-cc-monitor-stg.pingan.com:60443/js/paMonitor-1.0.0.min.js"></script> -->
+    <!-- <script>
+        paMonitor.init({
+            project:'ZHENGCHAO',
+            isSPA:true,
+            checkVisible:true,
+            env:'test'
+        })
+        paUtils.getCustomerInfo({id:'ZHENGCHAO'})
+    </script> -->
+
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    
   </head>
   <body>
     <noscript>
@@ -15,13 +39,24 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
-    <script src="./static/TcPlayer-2.3.1.js"> </script>
-    <script src='./static/xss.js'></script>
-    <script src="http://at.alicdn.com/t/font_912383_lw7j8jpask.js"></script>
-    <!-- <script id="worker" type="app/worker">
-      addEventListener('message', function () {
-        postMessage('some message');
-      }, false);
-    </script> -->
-  </body>
+     
+    <!-- <script src="./paMonitor.js"></script>
+        <script>
+            paMonitor.init({           
+                project:'BOTA',  // 系统ID
+                version:'1.0', // sdk版本
+                dev:'test', // 环境:dev,stg,prd
+                isSPA: true,          // 采集页面是否单页面，不传默认是true，传统页面必需传入
+                checkVisible: true ,  // 是否检测
+            })
+            paUtils.getCustomerInfo({id: Math.ceil((Math.random()*10000))})
+        </script> -->
+        <!-- <script id="worker" type="app/worker">
+            addEventListener('message', function () {
+                postMessage('some message');
+            }, false);
+        </script> -->
+    </body>
+    
+  
 </html>

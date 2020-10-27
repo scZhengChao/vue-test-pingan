@@ -3,8 +3,8 @@
     <p>{{str}}</p>
     
     <input type="text" v-model="str">
-    <input type="text" v-model="msg">
-    {{like}}
+    <!-- <input type="text" v-model="msg"> -->
+    <!-- {{like}} -->
   </div>
 </template>
 <style>
@@ -18,15 +18,15 @@ export default {
   name:'abc',
   props:['title'],
   data(){return{
-    str:this.title
+    str:this.title.name
   }},
   created(){
     // console.log($) 
   },
   mixins:[mixin],
   mounted(){
-    this.$parent.par('hahah')
-    console.log(this.$root)
+    // this.$parent.par('hahah')
+    // console.log(this.$root)
   },
   computed:{
     msg:{
@@ -43,7 +43,7 @@ export default {
   watch:{
     str:{
       handler:function(newValue,oldValue){
-        this.$emit('update:title',newValue)
+        // this.$emit('update:title',newValue)
       }
     }
   }

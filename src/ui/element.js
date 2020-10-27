@@ -1,4 +1,4 @@
-import { Button,Container,Main ,Aside,Loading,Dialog,Alert,Collapse,CollapseItem,Select,Option} from 'element-ui';
+import { Button,Container,Main ,Aside,Loading,Dialog,Alert,Collapse,CollapseItem,Select,Option,Icon,Form ,FormItem,Input} from 'element-ui';
 export default {
     install: function (Vue) {
         Vue.use(Button)
@@ -12,5 +12,9 @@ export default {
         Vue.use(CollapseItem)
         Vue.use(Option)
         Vue.use(Select)
+        Vue.use(Icon)
+        Vue.use(Form)
+        Vue.use(FormItem)
+        Vue.use(Input)
     }
 }
